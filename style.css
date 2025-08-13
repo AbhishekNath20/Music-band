@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: #0d0d0d;
+    color: #fff;
+    text-align: center;
+}
+.hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+.hero h1 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.hero p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+.about, .tour, .gallery, .members {
+    padding: 50px 20px;
+}
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: #ccc;
+}
+.tour table {
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.tour th {
+    background: #800020;
+    padding: 12px 20px;
+}
+.tour td {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.gallery .grid, .members .grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallery img, .members img {
+    width: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+.gallery img:hover, .members img:hover {
+    transform: scale(1.05);
+    border-color: #800020;
+    box-shadow: 0 4px 15px rgba(128,0,32,0.5);
+}
+.member-card {
+    max-width: 250px;
+    text-align: center;
+}
+.member-card h3 {
+    font-family: 'Metal Mania', cursive;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+.member-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 5px;
+}
+.footer {
+    background: #1a1a1a;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
