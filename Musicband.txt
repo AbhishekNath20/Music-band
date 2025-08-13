@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Eye - Music Band</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Metal+Mania&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background: #0d0d0d;
+            color: #fff;
+            text-align: center;
+        }
+        .hero {
+            background: url('https://australianmusichistory.com/wp-content/blogs.dir/7/files/burlesque_review/dsc_4897.jpg') center/cover no-repeat;
+            padding: 100px 20px;
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .hero h1 {
+            font-family: 'Metal Mania', cursive;
+            font-size: 4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            color: #ddd;
+            font-style: italic;
+        }
+        .about, .tour, .gallery, .members {
+            padding: 50px 20px;
+        }
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .tour table {
+            margin: auto;
+            border-collapse: collapse;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .tour th {
+            background: #800020;
+            padding: 12px 20px;
+        }
+        .tour td {
+            padding: 12px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .gallery .grid, .members .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img, .members img {
+            width: 250px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .gallery img:hover, .members img:hover {
+            transform: scale(1.05);
+            border-color: #800020;
+            box-shadow: 0 4px 15px rgba(128,0,32,0.5);
+        }
+        .member-card {
+            max-width: 250px;
+            text-align: center;
+        }
+        .member-card h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .member-card p {
+            font-size: 0.95rem;
+            color: #bbb;
+            margin-top: 5px;
+        }
+        .footer {
+            background: #1a1a1a;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Third Eye</h1>
+        <p>Music Beyond the Horizon</p>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Third Eye is a three-piece heavy rock/metal band blending raw energy with melodic storytelling. 
+        Our sound is a mix of powerful guitar riffs, thunderous drumming, and atmospheric keys, all fronted by a voice that cuts through the chaos. 
+        Over the past decade, we've performed across the globe, captivating audiences with our passionate live performances. 
+        From underground gigs to sold-out arenas, we believe in creating music that connects people, transcends boundaries, 
+        and inspires the mind to see beyond the ordinary.</p>
+    </section>
+
+    <!-- Band Members -->
+    <section class="members">
+        <h2>Meet the Band</h2>
+        <div class="grid">
+            <div class="member-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdjmliKecQvdd13z2K6rAHctoIYSrWO9SCdw&s" alt="Lead Guitarist & Vocalist">
+                <h3>Raven Black</h3>
+                <p>Lead Guitarist & Vocalist — The heart and voice of Third Eye, Raven delivers powerful solos and haunting vocals that define the band's sound.</p>
+            </div>
+            <div class="member-card">
+                <img src="data:image/jpeg;base64,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" alt="Drummer">
+                <h3>Steel Hayes</h3>
+                <p>Drummer — The thunder behind the storm, Steel drives the rhythm with explosive beats and relentless energy on stage.</p>
+            </div>
+            <div class="member-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBQMBS-nYRzBNlkKGIgTfaZWWzmy7XRVacw&s" alt="Keyboardist">
+                <h3>Echo Voss</h3>
+                <p>Keyboardist — The atmosphere creator, Echo layers melodies with dark, ethereal textures that give Third Eye its signature depth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Dates -->
+    <section class="tour">
+        <h2>Upcoming Tours</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>Venue</th>
+            </tr>
+            <tr>
+                <td>15 Sep 2025</td>
+                <td>London</td>
+                <td>O2 Arena</td>
+            </tr>
+            <tr>
+                <td>30 Sep 2025</td>
+                <td>Berlin</td>
+                <td>Mercedes-Benz Arena</td>
+            </tr>
+            <tr>
+                <td>10 Oct 2025</td>
+                <td>Tokyo</td>
+                <td>Nippon Budokan</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="grid">
+            <img src="images/gallery1.jpg" alt="Live Performance">
+            <img src="images/gallery2.jpg" alt="Band Members">
+            <img src="images/gallery3.jpg" alt="Concert Crowd">
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer class="footer">
+        <h2>Contact Us</h2>
+        <p>Email: management@thirdeyeband.com</p>
+    </footer>
+</body>
+</html>
